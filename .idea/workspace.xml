@@ -4,11 +4,7 @@
     <list default="true" id="dc2b7685-2adb-4463-bb89-8cb54edc11b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -77,7 +73,8 @@
       <updated>1615477352568</updated>
       <workItem from="1615477355343" duration="90000" />
       <workItem from="1615477797142" duration="20108000" />
-      <workItem from="1616066585072" duration="2754000" />
+      <workItem from="1616066585072" duration="5034000" />
+      <workItem from="1616071821674" duration="9348000" />
     </task>
     <task id="LOCAL-00001" summary="ci: add prettier eslint commitlint">
       <created>1615479954894</created>
@@ -100,7 +97,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615648828304</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore: add typescript type definition">
+      <created>1616069649313</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616069649313</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: any --&gt; unknown">
+      <created>1616071408077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616071408077</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: add generic type for useDebounce">
+      <created>1616072316797</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616072316798</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,7 +141,10 @@
     <MESSAGE value="ci: add prettier eslint commitlint" />
     <MESSAGE value="feat: add project list" />
     <MESSAGE value="feat: add useMount and useDebounce hooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add useMount and useDebounce hooks" />
+    <MESSAGE value="chore: add typescript type definition" />
+    <MESSAGE value="chore: any --&gt; unknown" />
+    <MESSAGE value="chore: add generic type for useDebounce" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add generic type for useDebounce" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
