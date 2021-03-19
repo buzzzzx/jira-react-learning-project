@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dc2b7685-2adb-4463-bb89-8cb54edc11b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__json_server_mock__/db.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__json_server_mock__/middleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mockServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/mockServiceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/login/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -40,7 +41,7 @@
   </component>
   <component name="ProjectId" id="1pcLIMZDnSTZLBTxtZTTZMsGYgT" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.karma.karma_node_package_dir" value="" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,7 +60,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -66,6 +68,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +85,7 @@
       <workItem from="1615477355343" duration="90000" />
       <workItem from="1615477797142" duration="20108000" />
       <workItem from="1616066585072" duration="5034000" />
-      <workItem from="1616071821674" duration="10829000" />
+      <workItem from="1616071821674" duration="17180000" />
     </task>
     <task id="LOCAL-00001" summary="ci: add prettier eslint commitlint">
       <created>1615479954894</created>
@@ -129,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616132526878</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="chore: add jira-dev-tool">
+      <created>1616134068888</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616134068888</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +170,8 @@
     <MESSAGE value="chore: any --&gt; unknown" />
     <MESSAGE value="chore: add generic type for useDebounce" />
     <MESSAGE value="feat: add login screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add login screen" />
+    <MESSAGE value="chore: add jira-dev-tool" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add jira-dev-tool" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
