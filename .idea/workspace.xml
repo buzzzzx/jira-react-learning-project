@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dc2b7685-2adb-4463-bb89-8cb54edc11b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__json_server_mock__/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__json_server_mock__/middleware.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,7 @@
       <workItem from="1615477355343" duration="90000" />
       <workItem from="1615477797142" duration="20108000" />
       <workItem from="1616066585072" duration="5034000" />
-      <workItem from="1616071821674" duration="9348000" />
+      <workItem from="1616071821674" duration="10829000" />
     </task>
     <task id="LOCAL-00001" summary="ci: add prettier eslint commitlint">
       <created>1615479954894</created>
@@ -118,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616072316798</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: add login screen">
+      <created>1616132526878</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616132526878</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +155,8 @@
     <MESSAGE value="chore: add typescript type definition" />
     <MESSAGE value="chore: any --&gt; unknown" />
     <MESSAGE value="chore: add generic type for useDebounce" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add generic type for useDebounce" />
+    <MESSAGE value="feat: add login screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add login screen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
