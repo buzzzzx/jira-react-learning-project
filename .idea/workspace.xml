@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc2b7685-2adb-4463-bb89-8cb54edc11b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/utils/http.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mockServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/mockServiceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/login/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth-provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth-provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth-context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth-context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -85,7 +84,7 @@
       <workItem from="1615477355343" duration="90000" />
       <workItem from="1615477797142" duration="20108000" />
       <workItem from="1616066585072" duration="5034000" />
-      <workItem from="1616071821674" duration="17180000" />
+      <workItem from="1616071821674" duration="21955000" />
     </task>
     <task id="LOCAL-00001" summary="ci: add prettier eslint commitlint">
       <created>1615479954894</created>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616134068888</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: add login register functions">
+      <created>1616141174245</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616141174245</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +177,9 @@
     <MESSAGE value="chore: add generic type for useDebounce" />
     <MESSAGE value="feat: add login screen" />
     <MESSAGE value="chore: add jira-dev-tool" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: add jira-dev-tool" />
+    <MESSAGE value="feat: add login register functions" />
+    <MESSAGE value="feat: add login status persistence" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add login status persistence" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
