@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc2b7685-2adb-4463-bb89-8cb54edc11b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/http.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/right.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth-provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth-provider.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/auth-context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth-context.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/project-list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/project-list/search-panel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/unauthenticated-app/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,6 +57,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -59,7 +70,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -84,7 +95,9 @@
       <workItem from="1615477355343" duration="90000" />
       <workItem from="1615477797142" duration="20108000" />
       <workItem from="1616066585072" duration="5034000" />
-      <workItem from="1616071821674" duration="21955000" />
+      <workItem from="1616071821674" duration="28266000" />
+      <workItem from="1616331224040" duration="4383000" />
+      <workItem from="1616335725066" duration="1452000" />
     </task>
     <task id="LOCAL-00001" summary="ci: add prettier eslint commitlint">
       <created>1615479954894</created>
@@ -149,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616141174245</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add login status persistence">
+      <created>1616146052490</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616146052490</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +188,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix" />
     <MESSAGE value="ci: add prettier eslint commitlint" />
     <MESSAGE value="feat: add project list" />
@@ -179,7 +200,8 @@
     <MESSAGE value="chore: add jira-dev-tool" />
     <MESSAGE value="feat: add login register functions" />
     <MESSAGE value="feat: add login status persistence" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add login status persistence" />
+    <MESSAGE value="style: install antd and emotion, optimize the login/register UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: install antd and emotion, optimize the login/register UI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
