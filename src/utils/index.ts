@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 
-const isFalsy = (value: unknown) => (value === 0 ? false : !value);
+export const isFalsy = (value: unknown) => (value === 0 ? false : !value);
+export const isVoid = (value: unknown) =>
+  value === undefined || value === null || value === "";
 
-export const cleanObject = (object: object) => {
+export const cleanObject = (object: { [key: string]: unknown }) => {
   const result = { ...object };
   Object.keys(result).forEach((key) => {
-    // @ts-ignore
     const value = result[key];
-    if (isFalsy(value)) {
-      // @ts-ignore
+    if (isVoid(value)) {
       delete result[key];
     }
   });
@@ -18,6 +18,8 @@ export const cleanObject = (object: object) => {
 export const useMount = (callback: () => void) => {
   useEffect(() => {
     callback();
+    // TODO: 依赖项里加上 callback 会造成无限循环，这个和 useCallback 以及 useMemo 有关
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };
 

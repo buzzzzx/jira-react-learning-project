@@ -3,7 +3,7 @@ import { ProjectListScreen } from "./screens/project-list";
 import styled from "@emotion/styled";
 import { Row } from "./components/lib";
 import { ReactComponent as SoftwareLogo } from "./assets/software-logo.svg";
-import { Dropdown, Menu } from "antd";
+import { Button, Dropdown, Menu } from "antd";
 
 export const AuthenticatedApp = () => {
   const { user, logout } = useAuth();
@@ -22,13 +22,17 @@ export const AuthenticatedApp = () => {
               <Menu>
                 <Menu.Item key={"logout"}>
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                  <a onClick={logout}>登出</a>
+                  <Button type={"link"} onClick={logout}>
+                    登出
+                  </Button>
                 </Menu.Item>
               </Menu>
             }
           >
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a onClick={(event) => event.preventDefault()}>Hi, {user?.name}</a>
+            <Button type={"link"} onClick={(event) => event.preventDefault()}>
+              Hi, {user?.name}
+            </Button>
           </Dropdown>
         </HeaderRight>
       </Header>
