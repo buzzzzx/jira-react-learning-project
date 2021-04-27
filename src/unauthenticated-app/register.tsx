@@ -9,9 +9,9 @@ export const RegisterScreen = ({
   onError: (error: Error) => void;
 }) => {
   const { register } = useAuth();
-  const { run, isLoading } = useAsync();
+  const { run, isLoading } = useAsync(undefined, { throwOnError: true });
 
-  const handleSubmit = ({
+  const handleSubmit = async ({
     cpassword,
     ...values
   }: {
@@ -23,7 +23,11 @@ export const RegisterScreen = ({
       onError(new Error("请确认两次输入密码相同"));
       return;
     }
-    run(register(values).catch(onError));
+    try {
+      await run(register(values));
+    } catch (e) {
+      onError(e);
+    }
   };
 
   return (

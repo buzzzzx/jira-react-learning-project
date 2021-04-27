@@ -9,10 +9,18 @@ export const LoginScreen = ({
   onError: (error: Error) => void;
 }) => {
   const { login } = useAuth();
-  const { run, isLoading } = useAsync();
+  const { run, isLoading } = useAsync(undefined, { throwOnError: true });
 
-  const handleSubmit = (values: { username: string; password: string }) => {
-    run(login(values).catch(onError));
+  const handleSubmit = async (values: {
+    username: string;
+    password: string;
+  }) => {
+    try {
+      await run(login(values));
+    } catch (e) {
+      console.log("test");
+      onError(e);
+    }
   };
 
   return (
