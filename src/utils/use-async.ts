@@ -50,7 +50,7 @@ export const useAsync = <D>(
 
     setState({ ...state, stat: "loading" });
 
-    promise
+    return promise
       .then((data) => {
         setData(data);
         return data;
