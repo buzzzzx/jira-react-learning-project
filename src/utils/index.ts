@@ -48,3 +48,16 @@ export const useDebounce = <V>(value: V, delay?: number) => {
 
   return debouncedValue;
 };
+
+export const useDocumentTitle = (title: string, keepOnMount = true) => {
+  const oldTitle = document.title;
+
+  useEffect(() => {
+    document.title = title;
+    return () => {
+      if (!keepOnMount) {
+        document.title = oldTitle;
+      }
+    };
+  }, [title]);
+};
