@@ -6,7 +6,7 @@ export const AppProviders = ({ children }: { children: React.ReactNode }) => {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
-      <AuthProvider>{children}</AuthProvider>;
+      <AuthProvider>{children}</AuthProvider>
     </QueryClientProvider>
   );
 };

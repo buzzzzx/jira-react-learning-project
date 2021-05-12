@@ -65,4 +65,4 @@ export const useDocumentTitle = (title: string, keepOnMount = true) => {
   }, [keepOnMount, oldTitle]);
 };
 
-export const resetRoute = () => (window.location.href = window.location.origin);
+export const resetRoute = () => (window.location.href = window.location.origin); // 这样写可以刷新页面
