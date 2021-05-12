@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const isFalsy = (value: unknown) => (value === 0 ? false : !value);
 export const isVoid = (value: unknown) =>
@@ -50,14 +50,17 @@ export const useDebounce = <V>(value: V, delay?: number) => {
 };
 
 export const useDocumentTitle = (title: string, keepOnMount = true) => {
-  const oldTitle = document.title;
+  const oldTitle = useRef(document.title).current;
 
   useEffect(() => {
     document.title = title;
+  }, [title]);
+
+  useEffect(() => {
     return () => {
       if (!keepOnMount) {
         document.title = oldTitle;
       }
     };
-  }, [title]);
+  }, [keepOnMount, oldTitle]);
 };
