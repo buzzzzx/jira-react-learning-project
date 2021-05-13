@@ -3,11 +3,10 @@ import { Table, TableProps } from "antd";
 import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 
-// TODO 把所有 id 都转换为 number
 export interface Project {
-  id: string;
+  id: number;
   name: string;
-  personId: string;
+  personId: number;
   pin: string;
   organization: string;
   created: number;
