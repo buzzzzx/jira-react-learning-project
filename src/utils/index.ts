@@ -66,3 +66,16 @@ export const useDocumentTitle = (title: string, keepOnMount = true) => {
 };
 
 export const resetRoute = () => (window.location.href = window.location.origin); // 这样写可以刷新页面
+
+export const useMountedRef = () => {
+  const mountedRef = useRef(false);
+
+  useEffect(() => {
+    mountedRef.current = true;
+    return () => {
+      mountedRef.current = false;
+    };
+  });
+
+  return mountedRef;
+};
