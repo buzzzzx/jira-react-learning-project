@@ -1,39 +1,60 @@
 import { useHttp } from "../../utils/http";
-import { useCallback, useEffect } from "react";
 import { cleanObject } from "../../utils";
-import { useAsync } from "../../utils/use-async";
 import { Project } from "./list";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 
 export const useProjects = (param?: Partial<Project>) => {
   const client = useHttp();
-  const { run, ...result } = useAsync<Project[]>();
 
-  const fetchProjects = useCallback(
-    () => client("projects", { data: cleanObject(param || {}) }),
-    [client, param]
+  // 当 param 变化的时候 useQuery 会重新触发
+  return useQuery<Project[]>(["projects", param], () =>
+    client("projects", { data: cleanObject(param || {}) })
   );
-
-  useEffect(() => {
-    run(fetchProjects(), { retry: fetchProjects });
-  }, [param, run, fetchProjects]);
-
-  return result;
 };
 
 export const useEditProject = () => {
-  const { run, ...asyncResult } = useAsync<Project[]>();
+  const queryClient = useQueryClient();
   const client = useHttp();
 
-  const mutate = (param: Partial<Project>) =>
-    run(
+  return useMutation(
+    (param: Partial<Project>) =>
       client(`projects/${param.id}`, {
         data: param,
         method: "PATCH",
-      })
-    );
+      }),
+    {
+      onSuccess: () => queryClient.invalidateQueries("projects"),
+    }
+  );
+};
 
-  return {
-    mutate,
-    ...asyncResult,
-  };
+export const useAddProject = () => {
+  const queryClient = useQueryClient();
+  const client = useHttp();
+
+  return useMutation(
+    (param: Partial<Project>) =>
+      client("projects", {
+        data: param,
+        method: "POST",
+      }),
+    {
+      onSuccess: () => queryClient.invalidateQueries("projects"),
+    }
+  );
+};
+
+export const useProject = (projectId?: number) => {
+  const client = useHttp();
+
+  return useQuery<Project>(
+    ["project", { projectId }],
+    () =>
+      client(`projects/${projectId}`, {
+        method: "GET",
+      }),
+    {
+      enabled: !!projectId,
+    }
+  );
 };
