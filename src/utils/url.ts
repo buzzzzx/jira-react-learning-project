@@ -3,7 +3,8 @@ import { useMemo } from "react";
 import { cleanObject, subset } from "./index";
 
 export const useUrlQueryParam = <K extends string>(keys: K[]) => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
+  const setSearchParams = useSetUrlQueryParam();
 
   return [
     useMemo(
@@ -15,12 +16,17 @@ export const useUrlQueryParam = <K extends string>(keys: K[]) => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
       [searchParams]
     ),
-    (params: Partial<{ [k in K]: unknown }>) => {
-      let o = cleanObject({
-        ...Object.fromEntries(searchParams),
-        ...params,
-      }) as URLSearchParamsInit;
-      return setSearchParams(o);
-    },
+    (params: Partial<{ [k in K]: unknown }>) => setSearchParams(params),
   ] as const;
+};
+
+export const useSetUrlQueryParam = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  return (params: { [key in string]: unknown }) => {
+    let o = cleanObject({
+      ...Object.fromEntries(searchParams),
+      ...params,
+    }) as URLSearchParamsInit;
+    return setSearchParams(o);
+  };
 };
