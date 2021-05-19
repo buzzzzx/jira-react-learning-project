@@ -4,7 +4,7 @@ import {
   useProjectsQueryKey,
 } from "../screens/project-list/util";
 import { UserSelect } from "./user-select";
-import { useAddProject, useEditProject } from "../screens/project-list/project";
+import { useAddProject, useEditProject } from "../utils/project";
 import { useForm } from "antd/es/form/Form";
 import { useEffect } from "react";
 import styled from "@emotion/styled";

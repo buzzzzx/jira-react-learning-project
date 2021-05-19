@@ -1,6 +1,6 @@
 // 如果使用了第三方 auth 服务，比如 firebase，那么就不需要开发者开发此文件
 
-import { User } from "./screens/project-list/search-panel";
+import { User } from "./type/user";
 
 const apiUrl = process.env.REACT_APP_API_URL;
 

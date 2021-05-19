@@ -1,12 +1,12 @@
-import { useHttp } from "../../utils/http";
-import { cleanObject } from "../../utils";
-import { Project } from "./list";
+import { useHttp } from "./http";
+import { cleanObject } from "./index";
 import { QueryKey, useMutation, useQuery } from "react-query";
 import {
   useAddConfig,
   useDeleteConfig,
   useEditConfig,
-} from "../../utils/use-optimistic-udpate";
+} from "./use-optimistic-udpate";
+import { Project } from "../type/project";
 
 export const useProjects = (param?: Partial<Project>) => {
   const client = useHttp();

@@ -1,6 +1,6 @@
 import { useSetUrlQueryParam, useUrlQueryParam } from "../../utils/url";
 import { useMemo } from "react";
-import { useProject } from "./project";
+import { useProject } from "../../utils/project";
 
 export const useProjectsSearchParams = () => {
   const [param, setParam] = useUrlQueryParam(["name", "personId"]);
