@@ -39,3 +39,6 @@ export const useDeleteConfig = (queryKey: QueryKey) =>
     queryKey,
     (target, old) => old?.filter((item) => item.id !== target.id) || []
   );
+
+export const useReorderConfig = (queryKey: QueryKey) =>
+  useConfig(queryKey, (target, old) => old || []);

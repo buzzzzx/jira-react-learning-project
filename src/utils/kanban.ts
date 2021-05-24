@@ -6,6 +6,7 @@ import {
   useAddConfig,
   useDeleteConfig,
   useEditConfig,
+  useReorderConfig,
 } from "./use-optimistic-udpate";
 
 export const useKanbans = (param?: Partial<Kanban>) => {
@@ -52,4 +53,26 @@ export const useEditKanban = (queryKey: QueryKey) => {
       }),
     useEditConfig(queryKey)
   );
+};
+
+export interface SortProps {
+  // 需要移动的 Item
+  fromId: number;
+  // 移动到的目标位置
+  referenceId: number;
+  // 目标位置的前后
+  type: "after" | "before";
+  fromKanbanId?: number;
+  toKanbanId?: number;
+}
+
+export const useReorderKanban = (queryKey: QueryKey) => {
+  const client = useHttp();
+
+  return useMutation((params: SortProps) => {
+    return client("kanbans/reorder", {
+      data: params,
+      method: "POST",
+    });
+  }, useReorderConfig(queryKey));
 };
