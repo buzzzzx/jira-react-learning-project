@@ -6,7 +6,7 @@ import {
   useAddConfig,
   useDeleteConfig,
   useEditConfig,
-  useReorderConfig,
+  useReorderKanbanConfig,
 } from "./use-optimistic-udpate";
 
 export const useKanbans = (param?: Partial<Kanban>) => {
@@ -74,5 +74,5 @@ export const useReorderKanban = (queryKey: QueryKey) => {
       data: params,
       method: "POST",
     });
-  }, useReorderConfig(queryKey));
+  }, useReorderKanbanConfig(queryKey));
 };

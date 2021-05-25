@@ -73,7 +73,8 @@ const useDragEnd = () => {
   const { mutate: reorderTask } = useReorderTask(useTasksQueryKey());
   return useCallback(
     ({ source, destination, type }: DropResult) => {
-      if (!destination?.index) {
+      console.log(source, destination, type);
+      if (!destination) {
         return;
       }
 
